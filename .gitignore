@@ -1,4 +1,4 @@
-.gradle
+**/.gradle
 **/build/
 !src/**/build/
 
@@ -19,3 +19,4 @@
 **/.project
 # JDT-specific (Eclipse Java Development Tools)
 **/.classpath
+**/.DS_Store
