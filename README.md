@@ -30,7 +30,7 @@ spring:
 - 테스트 API : `http://localhost:8080/test/1`
   ```bash
   $ curl http://localhost:8080/test/1
-
+  (코드에서 지정한 20000ms 지연)
   Process Success !!
   ```
 - Graceful Shutdown 종료를 위해 `kill -15 <PID>` 형태의 시그널 전달 필요
