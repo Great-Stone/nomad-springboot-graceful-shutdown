@@ -81,7 +81,7 @@ job "graceful" {
       }
 
       artifact {
-        source = "https://github.com/Great-Stone/nomad-springboot-graceful-shutdown/releases/0.0.1/demo-0.0.1-SNAPSHOT.jar"
+        source = "https://github.com/Great-Stone/nomad-springboot-graceful-shutdown/releases/download/0.0.1/demo-0.0.1-SNAPSHOT.jar"
       }
     }
   }
