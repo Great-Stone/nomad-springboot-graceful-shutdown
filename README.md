@@ -27,6 +27,12 @@ spring:
 
 - 테스트는 빌드(`gradle build`) 후 해당 jar파일에 대해 실행
 - 실행 커맨드 예시 : `java -jar ./build/libs/demo-0.0.1-SNAPSHOT.jar`
+- 테스트 API : `http://localhost:8080/test/1`
+  ```bash
+  $ curl http://localhost:8080/test/1
+
+  Process Success !!
+  ```
 - Graceful Shutdown 종료를 위해 `kill -15 <PID>` 형태의 시그널 전달 필요
   - KILL(`-9`)대신 TERM(`-15`)를 사용
   - KILL(SIGKILL) : 무조건적인 즉각적 종료
@@ -90,3 +96,5 @@ job "graceful" {
 
 - Nomad의 기본 종료는 `SIGKILL`이므로 task 정의에서 `kill_signal`을 `SIGTERM`으로 변경 필요
 - `kill_timeout` 기본 값이 5초 이므로, Graceful Shutdown을 적용하려는 애플리케이션의 정의 보다 크게 설정 필요
+
+![](./job_stop_log.png)
